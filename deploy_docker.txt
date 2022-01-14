@@ -1,0 +1,4 @@
+docker login --username jpleorx
+docker build -t jpleorx/tekleo-fileserver:latest .
+docker push jpleorx/tekleo-fileserver:latest
+docker run --name=tekleo-fileserver --rm -ti -p 9001:9001 -v /home/leo/tekleo/fileserver/output:/output jpleorx/tekleo-fileserver:latest
