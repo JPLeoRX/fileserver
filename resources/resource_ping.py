@@ -1,6 +1,6 @@
-from a360_message_protocol import PingOutput
+from message_objects.ping_output import PingOutput
 from fastapi import APIRouter
-from a360_utils import UtilsPing
+from utils.utils_ping import UtilsPing
 
 router_ping = APIRouter()
 utils_ping = UtilsPing()

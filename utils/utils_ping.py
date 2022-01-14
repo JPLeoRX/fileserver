@@ -1,7 +1,7 @@
 from injectable import injectable, autowired, Autowired
-from a360_message_protocol import PingOutput
-from a360_utils.utils_id import UtilsId
-from a360_utils.utils_time import UtilsTime
+from message_objects.ping_output import PingOutput
+from utils.utils_id import UtilsId
+from utils.utils_time import UtilsTime
 
 
 @injectable

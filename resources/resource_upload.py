@@ -21,7 +21,8 @@ async def upload(request: Request) -> UploadOutput:
     extension = content_type.replace('video/', '')
 
     id = utils_id.generate_uuid().replace('-', '')
-    folder = '/home/leo/tekleo/fileserver/output'
+    #folder = '/home/leo/tekleo/fileserver/output'
+    folder = '/output'
     path = folder + '/' + id + '.' + extension
     print(utils_time.format_timestamp_ms(utils_time.get_current_timestamp_ms()) + ': resource_upload.upload(): Saving video to [' + path + ']')
 

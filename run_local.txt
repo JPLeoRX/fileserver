@@ -1,0 +1,6 @@
+# For local tests
+uvicorn main:app --host 0.0.0.0 --port 9001 --workers 1
+
+# For docker tests
+docker build -t tekleo-fileserver:latest .
+docker run --name=tekleo-fileserver --rm -ti -p 9001:9001 -v /home/leo/tekleo/fileserver/output:/output tekleo-fileserver:latest
